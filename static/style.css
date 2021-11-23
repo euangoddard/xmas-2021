@@ -1,6 +1,6 @@
 :root {
   --font-stack-sans-serif: "Roboto", sans-serif;
-  --font-stack-cursive: "Festive", cursive;
+  --font-stack-cursive: 'Alice', cursive;
   --color-red: rgba(255, 0, 0, 0.5);
   --color-black: rgba(0, 0, 0, 0.87);
 }
