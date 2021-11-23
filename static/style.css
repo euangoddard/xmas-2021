@@ -1,0 +1,56 @@
+:root {
+  --font-stack-sans-serif: "Roboto", sans-serif;
+  --font-stack-cursive: "Festive", cursive;
+  --color-red: rgba(255, 0, 0, 0.5);
+  --color-black: rgba(0, 0, 0, 0.87);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-black);
+  font-family: var(--font-stack-sans-serif);
+  font-size: 16px;
+  padding: 1rem;
+}
+
+h1,
+h2,
+p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: var(--font-stack-cursive);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+button.plain {
+  cursor: pointer;
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+}
