@@ -7,7 +7,7 @@
     ["E", "☠️"],
     ["F", "🧠"],
     ["G", "🦷"],
-    ["H", "🧞️"],
+    ["H", "👙"],
     ["I", "☂️"],
     ["J", "🧶"],
     ["K", "🎩"],
@@ -72,7 +72,16 @@
     margin: 6rem -1rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 480px) {
+    section {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   .device,
@@ -92,28 +101,33 @@
   .message {
     word-spacing: 0.6em;
     text-align: center;
-      padding: 0 1rem;
+    padding: 0 1rem;
   }
 
   .input {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .output {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px;
+    width: 45px;
+    flex-shrink: 0;
+    text-align: center;
   }
   .plain {
     font-size: 40px;
     line-height: 1;
+    padding: 0 4px;
   }
   .plain.left {
-    padding-right: 4px;
+    /*padding-right: 4px;*/
   }
   .plain.right {
-    padding-left: 4px;
+    /*padding-left: 4px;*/
+    text-align: right;
   }
   .plain:hover {
     text-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),

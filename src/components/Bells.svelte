@@ -4,19 +4,21 @@
   import Bell from "./Bell.svelte";
 
   const notes: readonly NoteDef[] = [
-    { key: "B6", code: "Z" },
-    { key: "D7", code: "Y" },
     { key: "G6", code: "X" },
     { key: "A6", code: "W" },
+    { key: "B6", code: "Z" },
+    { key: "C7", code: "A" },
+    { key: "D7", code: "Y" },
+    { key: "E7", code: "C" },
   ];
 
   // Correct sequence = B6, B6, B6, B6, B6, B6, B6, D7, G6, A6, B6
   // Correct cipher key: ZZZZZZZYXWZ
-  console.log(
-    new VigenereCipher("ZZZZZZZYXWZ").encipher(
-      "Bottom left then up two across four down one",
-    ),
-  );
+  // console.log(
+  //   new VigenereCipher("ZZZZZZZYXWZ").encipher(
+  //     "Bottom left then up two across four down one",
+  //   ),
+  // );
   const encipheredValue = "ANSSNL JBBS SGDM TN PVN ZBQNRQ BNTQ CNVM LJD";
 
   const incorrectKey = "THISKYWRONG";
@@ -74,7 +76,7 @@
   .reset-button {
     cursor: pointer;
     display: inline-block;
-    margin-left: 32px;
+    margin-left: 24px;
     appearance: none;
     padding: 0;
     border: 0;
