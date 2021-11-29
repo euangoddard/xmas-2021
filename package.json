@@ -26,5 +26,8 @@
     "typescript": "^4.4.4"
   },
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "@types/canvas-confetti": "^1.4.2",
+    "canvas-confetti": "^1.4.0"
+  }
 }

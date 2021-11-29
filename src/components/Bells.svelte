@@ -14,10 +14,10 @@
   // Correct cipher key: ZZZZZZZYXWZ
   console.log(
     new VigenereCipher("ZZZZZZZYXWZ").encipher(
-      "Top left then down two across five",
+      "Bottom left then up two across four down one",
     ),
   );
-  const encipheredValue = "SNO KDER PGDM CNVM QSN ZBQNRR CEUD";
+  const encipheredValue = "ANSSNL JBBS SGDM TN PVN ZBQNRQ BNTQ CNVM LJD";
 
   const incorrectKey = "THISKYWRONG";
 
