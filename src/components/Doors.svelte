@@ -120,8 +120,8 @@
   .colour {
     border: 1px solid var(--color-black);
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
   }
 </style>

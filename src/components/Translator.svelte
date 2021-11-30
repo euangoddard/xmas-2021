@@ -108,8 +108,8 @@
     border-radius: 4px;
     display: flex;
     align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   .output {
     border-radius: 4px;
@@ -120,7 +120,7 @@
   .plain {
     font-size: 40px;
     line-height: 1;
-    padding: 0 4px;
+    padding: 0 8px;
   }
   .plain.left {
     /*padding-right: 4px;*/
