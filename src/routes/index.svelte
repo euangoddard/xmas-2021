@@ -14,12 +14,11 @@
 
 <p>
   This year's interactive takes the form of an interactive puzzle. Solve clues
-  to reveal the secret message hidden <a sveltekit:prefetch href="/puzzle"
-    >here</a
+  to reveal the secret message. Look for hidden elements, think laterally and
+  feel free to come back later! If you're really stuck take a look at the <a
+    sveltekit:prefetch
+    href="/hints">hints</a
   >.
-</p>
-<p>
-  Look for hidden elements, think laterally and feel free to come back later!
 </p>
 <p>
   <a class="button" sveltekit:prefetch href="/puzzle">Start puzzle</a>

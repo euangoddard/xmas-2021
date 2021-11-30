@@ -1,6 +1,6 @@
 :root {
   --font-stack-sans-serif: "Roboto", sans-serif;
-  --font-stack-cursive: 'Alice', cursive;
+  --font-stack-cursive: "Alice", cursive;
   --color-red: rgba(255, 0, 0, 0.5);
   --color-black: rgba(0, 0, 0, 0.87);
 }
@@ -53,4 +53,21 @@ button.plain {
   border: 0;
   background: none;
   color: inherit;
+}
+
+a.nav-back {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 56px;
+  width: 56px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.65);
+  transition: background-color 0.25s ease-in-out;
+}
+
+a.nav-back:hover,
+a.nav-back:focus {
+  background: var(--color-red);
 }

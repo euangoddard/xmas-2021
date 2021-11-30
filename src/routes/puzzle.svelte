@@ -12,7 +12,7 @@
 </svelte:head>
 
 <article class="puzzle">
-  <h1>The puzzle</h1>
+  <h1><a href="/" class="nav-back" sveltekit:prefetch>&larr;</a> The puzzle</h1>
 
   <p class="song">
     When one thinks of Christmas, images of the holly and the ivy are conjured
