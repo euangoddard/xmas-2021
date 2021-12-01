@@ -11,8 +11,12 @@
   <title>The puzzle!</title>
 </svelte:head>
 
-<article class="puzzle">
-  <h1><a href="/" class="nav-back" sveltekit:prefetch>&larr;</a> The puzzle</h1>
+<article class="container">
+  <h1 class="page-title">
+    <a href="/" class="nav-back" sveltekit:prefetch
+      ><img src="/icons/arrow-back.svg" alt="Back to home" />
+    </a> The puzzle
+  </h1>
 
   <p class="song">
     When one thinks of Christmas, images of the holly and the ivy are conjured
@@ -35,14 +39,15 @@
   <Doors />
 
   <Code />
+
+  <aside>
+    <strong>Stuck?</strong> Don't forget you can look at the <a sveltekit:prefetch href="/hints"
+      >hints</a
+    >.
+  </aside>
 </article>
 
 <style>
-  .puzzle {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
   .song {
     font-family: var(--font-stack-cursive);
     font-size: 1.75rem;
@@ -53,5 +58,10 @@
 
   .song-revealed {
     color: var(--color-red);
+  }
+
+  aside {
+    padding: 2rem 0;
+    text-align: center;
   }
 </style>

@@ -45,7 +45,11 @@
   };
 </script>
 
-<h1><a href="/" class="nav-back" sveltekit:prefetch>&larr;</a> Hints</h1>
+<h1 class="page-title">
+  <a href="/" class="nav-back" sveltekit:prefetch
+    ><img src="/icons/arrow-back.svg" alt="Back to home" /></a
+  > Hints
+</h1>
 {#each sections as section}
   <details on:toggle={closeOthers}>
     <summary>{section.title}</summary>

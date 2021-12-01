@@ -55,19 +55,36 @@ button.plain {
   color: inherit;
 }
 
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 a.nav-back {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   text-decoration: none;
-  line-height: 56px;
-  width: 56px;
+  height: 48px;
+  width: 48px;
   text-align: center;
   color: rgba(0, 0, 0, 0.65);
   transition: background-color 0.25s ease-in-out;
 }
 
+a.nav-back img {
+  width: 40px;
+}
+
 a.nav-back:hover,
 a.nav-back:focus {
   background: var(--color-red);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }

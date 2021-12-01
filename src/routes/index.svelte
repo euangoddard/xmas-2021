@@ -2,27 +2,29 @@
   <title>Merry Christmas and a Happy 2022!</title>
 </svelte:head>
 
-<h1>Merry Christmas and a Happy 2022!</h1>
-<p>
-  Wishing you all the best for the festive season from all in the
-  Dallimore-Goddard household.
-</p>
+<article class="container">
+  <h1>Merry Christmas and a Happy 2022!</h1>
+  <p>
+    Wishing you all the best for the festive season from all in the
+    Dallimore-Goddard household.
+  </p>
 
-<h2>Love from, Euan, Chloe, Eric, Alex and Autumn</h2>
+  <h2>Love from, Euan, Chloe, Eric, Alex and Autumn</h2>
 
-<hr />
+  <hr />
 
-<p>
-  This year's interactive takes the form of an interactive puzzle. Solve clues
-  to reveal the secret message. Look for hidden elements, think laterally and
-  feel free to come back later! If you're really stuck take a look at the <a
-    sveltekit:prefetch
-    href="/hints">hints</a
-  >.
-</p>
-<p>
-  <a class="button" sveltekit:prefetch href="/puzzle">Start puzzle</a>
-</p>
+  <p>
+    This year's interactive takes the form of an interactive puzzle. Solve clues
+    to reveal the secret message. Look for hidden elements, think laterally and
+    feel free to come back later! If you're really stuck take a look at the <a
+      sveltekit:prefetch
+      href="/hints">hints</a
+    >.
+  </p>
+  <p>
+    <a class="button" sveltekit:prefetch href="/puzzle">Start puzzle</a>
+  </p>
+</article>
 
 <style>
   * {
