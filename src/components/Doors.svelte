@@ -23,7 +23,7 @@
       colourToNumber(horizontalColour) * colourToNumber(verticalColour);
     for (let i = 0; i < cellCount; i++) {
       for (let j = 0; j < cellCount; j++) {
-        const value = mix % ((i + 1) * cellCount + j + 1) % 10;
+        const value = (mix % ((i + 1) * cellCount + j + 1)) % 10;
         doors[i][j] = value;
       }
     }

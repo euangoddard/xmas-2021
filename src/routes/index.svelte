@@ -15,11 +15,17 @@
 
   <p>
     This year's interactive takes the form of an interactive puzzle. Solve clues
-    to reveal the secret message. Look for hidden elements, think laterally and
-    feel free to come back later! If you're really stuck take a look at the <a
-      sveltekit:prefetch
-      href="/hints">hints</a
+    to reveal the code that unlocks your prize.
+  </p>
+  <p>
+    Play around, think laterally and feel free to come back later! If you're
+    really stuck take a look at the <a sveltekit:prefetch href="/hints">hints</a
     >.
+  </p>
+  <p>
+    Some puzzles unlock information to help in others and contain all the
+    information you'll need to solve right there; others require a clue from a
+    previous puzzle to point you in the right direction.
   </p>
   <p>
     <a class="button" sveltekit:prefetch href="/puzzle">Start puzzle</a>

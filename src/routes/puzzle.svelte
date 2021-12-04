@@ -1,10 +1,9 @@
 <script lang="ts">
   import Bells from "../components/Bells.svelte";
+  import Blurb from "../components/Blurb.svelte";
   import Code from "../components/Code.svelte";
   import Doors from "../components/Doors.svelte";
   import Translator from "../components/Translator.svelte";
-
-  let isSongRevealed = false;
 </script>
 
 <svelte:head>
@@ -18,17 +17,7 @@
     </a> The puzzle
   </h1>
 
-  <p class="song">
-    When one thinks of Christmas, images of the holly and the ivy are conjured
-    up, as well as that deep and crisp and even snow, and indeed chestnuts
-    roasting on an open fire. Some talk of Santa Claus coming to town, while
-    other ponder the silent night that happened all those years ago. So whether
-    you're hoping to hear those <span
-      class={isSongRevealed ? "song-revealed" : ""}
-      on:click={() => (isSongRevealed = true)}>jingle bells</span
-    >, holding out for a white Christmas or have a soft spot in your heart for
-    the little drummer boy, let the bells ring out for Christmas!
-  </p>
+  <Blurb />
 
   <p>
     <Bells />
@@ -41,27 +30,14 @@
   <Code />
 
   <aside>
-    <strong>Stuck?</strong> Don't forget you can look at the <a sveltekit:prefetch href="/hints"
-      >hints</a
-    >.
+    <strong>Stuck?</strong> Don't forget you can look at the
+    <a sveltekit:prefetch href="/hints">hints</a>.
   </aside>
 </article>
 
 <style>
-  .song {
-    font-family: var(--font-stack-cursive);
-    font-size: 1.75rem;
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 1px dashed var(--color-red);
-  }
-
-  .song-revealed {
-    color: var(--color-red);
-  }
-
   aside {
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     text-align: center;
   }
 </style>

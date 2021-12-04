@@ -27,7 +27,11 @@
   };
 </script>
 
-<button type="button" on:click={ringBell} class={isRinging ? "ringing plain" : "plain"}>
+<button
+  type="button"
+  on:click={ringBell}
+  class={isRinging ? "ringing plain" : "plain"}
+>
   <img src="/icons/bell.svg" alt="Bell" />
 </button>
 

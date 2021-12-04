@@ -1,6 +1,11 @@
-import { container } from "$lib/container";
+import { container } from "../container";
 import type { Note } from "./models";
 import { NOTES } from "./notes.definition";
+
+export enum Duration {
+  Quaver = 200,
+  Crotchet = 400,
+}
 
 export class NotesService {
   private readonly gainNode: GainNode;
@@ -16,7 +21,7 @@ export class NotesService {
     this.gainNode.connect(this.context.destination);
   }
 
-  playNote(noteName: string, duration = 500): void {
+  playNote(noteName: string, duration = Duration.Crotchet): void {
     if (this.isSoundPlaying && this.sourceAudioNode) {
       this.sourceAudioNode.stop();
       if (this.stopTimeoutID) {
@@ -55,9 +60,9 @@ export class NotesService {
 
 const AudioContextToken = Symbol("AudioContextToken");
 
-container.register(AudioContextToken, ()=> {
-  return new AudioContext()
-})
+container.register(AudioContextToken, () => {
+  return new AudioContext();
+});
 
 container.register(
   NotesService,

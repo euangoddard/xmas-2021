@@ -8,12 +8,12 @@
     {
       id: 1,
       title: "Intro blurb",
-      hint: "Try clicking around to see if any parts stand out",
+      hint: "Notice that some words stand out. Try clicking on these and see what happens",
     },
     {
       id: 2,
       title: "Bells",
-      hint: "Find the song you need to play in the blurb and play it out to decode the message",
+      hint: "Find the song you need to play in the blurb and play it out to decode the message. If you make a mistake, use the reset button to clear what you've done",
     },
     {
       id: 3,
@@ -45,17 +45,19 @@
   };
 </script>
 
-<h1 class="page-title">
-  <a href="/" class="nav-back" sveltekit:prefetch
-    ><img src="/icons/arrow-back.svg" alt="Back to home" /></a
-  > Hints
-</h1>
-{#each sections as section}
-  <details on:toggle={closeOthers}>
-    <summary>{section.title}</summary>
-    <p>{section.hint}</p>
-  </details>
-{/each}
+<article class="container">
+  <h1 class="page-title">
+    <a href="/" class="nav-back" sveltekit:prefetch
+      ><img src="/icons/arrow-back.svg" alt="Back to home" /></a
+    > Hints
+  </h1>
+  {#each sections as section}
+    <details on:toggle={closeOthers}>
+      <summary>{section.title}</summary>
+      <p>{section.hint}</p>
+    </details>
+  {/each}
+</article>
 
 <style>
   @keyframes invisiblyGrowFontSize {

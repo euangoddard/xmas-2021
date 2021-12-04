@@ -2,6 +2,7 @@
   --font-stack-sans-serif: "Roboto", sans-serif;
   --font-stack-cursive: "Alice", cursive;
   --color-red: rgba(255, 0, 0, 0.5);
+  --color-green: #00c853;
   --color-black: rgba(0, 0, 0, 0.87);
 }
 
@@ -87,4 +88,5 @@ a.nav-back:focus {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
