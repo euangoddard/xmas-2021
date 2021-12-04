@@ -45,6 +45,18 @@
   };
 </script>
 
+<svelte:head>
+  <title>Hints</title>
+  <meta property="description" content="Hints to help you solve the puzzles" />
+  <meta property="og:title" content="Hints to help you solve the puzzles" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xmas-2021.netlify.app" />
+  <meta
+    property="og:image"
+    content="https://xmas-2021.netlify.app/android-chrome-512x512.png"
+  />
+</svelte:head>
+
 <article class="container">
   <h1 class="page-title">
     <a href="/" class="nav-back" sveltekit:prefetch

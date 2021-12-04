@@ -1,5 +1,16 @@
 <svelte:head>
   <title>Merry Christmas and a Happy 2022!</title>
+  <meta
+    property="description"
+    content="Solve Christmas-themed puzzles to celebreate Chrismtmas 2021"
+  />
+  <meta property="og:title" content="Merry Christmas and a Happy 2022!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xmas-2021.netlify.app" />
+  <meta
+    property="og:image"
+    content="https://xmas-2021.netlify.app/android-chrome-512x512.png"
+  />
 </svelte:head>
 
 <article class="container">
