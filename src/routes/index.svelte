@@ -7,8 +7,8 @@
 <svelte:head>
   <title>Merry Christmas and a Happy 2022!</title>
   <meta
-    property="description"
-    content="Solve Christmas-themed puzzles to celebreate Chrismtmas 2021"
+    name="description"
+    content="Solve Christmas-themed puzzles to celebrate Christmas 2021 - by Euan Goddard"
   />
   <meta property="og:title" content="Merry Christmas and a Happy 2022!" />
   <meta property="og:type" content="website" />

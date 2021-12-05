@@ -9,8 +9,8 @@
 <svelte:head>
   <title>The puzzle!</title>
   <meta
-    property="description"
-    content="Solve Christmas-themed puzzles to celebreate Chrismtmas 2021"
+    name="description"
+    content="Solve Christmas-themed puzzles to celebrate Christmas 2021"
   />
   <meta property="og:title" content="Solve the Christmas puzzle!" />
   <meta property="og:type" content="website" />

@@ -47,7 +47,7 @@
 
 <svelte:head>
   <title>Hints</title>
-  <meta property="description" content="Hints to help you solve the puzzles" />
+  <meta name="description" content="Hints to help you solve the puzzles" />
   <meta property="og:title" content="Hints to help you solve the puzzles" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xmas-2021.netlify.app" />
