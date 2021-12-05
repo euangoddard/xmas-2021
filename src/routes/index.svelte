@@ -35,29 +35,27 @@
 
   {#if showAutumn}
     <p id="autumn" in:slide out:slide>
-      <img
-        src="/autumn.jpg"
-        alt="Autumn"
-        loading="lazy"
-        class="autumn"
-      />
+      <img src="/autumn.jpg" alt="Autumn" loading="lazy" class="autumn" />
     </p>
   {/if}
   <hr />
 
   <p>
-    This year's interactive takes the form of an interactive puzzle. Solve clues
-    to reveal the code that unlocks your prize.
-  </p>
-  <p>
-    Play around, think laterally and feel free to come back later! If you're
-    really stuck take a look at the <a sveltekit:prefetch href="/hints">hints</a
-    >.
+    This year's card takes the form of an interactive puzzle. Solve clues to
+    reveal the code that unlocks your prize.
   </p>
   <p>
     Some puzzles unlock information to help in others and contain all the
     information you'll need to solve right there; others require a clue from a
     previous puzzle to point you in the right direction.
+  </p>
+  <p>
+    Play around, think laterally and feel free to come back later! You'll need
+    to listen to solve one of the puzzles so make sure you have your volume
+    turned up. If you're really stuck take a look at the <a
+      sveltekit:prefetch
+      href="/hints">hints</a
+    >.
   </p>
   <p>
     <a class="button" sveltekit:prefetch href="/puzzle">Start puzzle</a>

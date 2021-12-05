@@ -8,12 +8,12 @@
     {
       id: 1,
       title: "Intro blurb",
-      hint: "Notice that some words stand out. Try clicking on these and see what happens",
+      hint: "Notice that some words stand out. Try clicking on these and see what happens. You'll need to be able to hear sounds for this puzzle.",
     },
     {
       id: 2,
       title: "Bells",
-      hint: "Find the song you need to play in the blurb and play it out to decode the message. If you make a mistake, use the reset button to clear what you've done",
+      hint: "Find the song you need to play in the blurb and use the bells to sound it out to decode the message. If you make a mistake, use the reset button to clear what you've done. You'll need to be able to hear sounds for this puzzle. If you make a mistake, make sure you use the reset button before you try again.",
     },
     {
       id: 3,
