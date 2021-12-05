@@ -1,3 +1,9 @@
+<script lang="ts">
+  import { slide } from "svelte/transition";
+
+  let showAutumn = false;
+</script>
+
 <svelte:head>
   <title>Merry Christmas and a Happy 2022!</title>
   <meta
@@ -20,8 +26,23 @@
     Dallimore-Goddard household.
   </p>
 
-  <h2>Love from, Euan, Chloe, Eric, Alex and Autumn</h2>
+  <h2>
+    Love from, Euan, Chloe, Eric, Alex and <a
+      href="#autumn"
+      on:click={() => (showAutumn = !showAutumn)}>Autumn</a
+    >
+  </h2>
 
+  {#if showAutumn}
+    <p id="autumn" in:slide out:slide>
+      <img
+        src="/autumn.jpg"
+        alt="Autumn"
+        loading="lazy"
+        class="autumn"
+      />
+    </p>
+  {/if}
   <hr />
 
   <p>
@@ -63,6 +84,13 @@
   }
 
   .button:hover {
+    box-shadow: 0 1px 2px 0 rgb(26 115 232 / 30%),
+      0 1px 3px 1px rgb(26 115 232 / 15%);
+  }
+
+  .autumn {
+    width: 250px;
+    height: 250px;
     box-shadow: 0 1px 2px 0 rgb(26 115 232 / 30%),
       0 1px 3px 1px rgb(26 115 232 / 15%);
   }
