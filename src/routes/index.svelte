@@ -45,13 +45,13 @@
     reveal the code that unlocks your prize.
   </p>
   <p>
-    Some puzzles unlock information to help in others and contain all the
-    information you'll need to solve right there; others require a clue from a
-    previous puzzle to point you in the right direction.
+    Some puzzles can be solved with no other information than that contained in
+    the puzzle itself, but others do require information discovered in previous
+    puzzles.
   </p>
   <p>
     Play around, think laterally and feel free to come back later! You'll need
-    to listen to solve one of the puzzles so make sure you have your volume
+    to listen to solve some of the puzzles so make sure you have your volume
     turned up. If you're really stuck take a look at the <a
       sveltekit:prefetch
       href="/hints">hints</a
